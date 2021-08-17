@@ -19,10 +19,12 @@ const accountSchema = new mongoose.Schema({
   ],
   keys: [
     {
-      type: 
-    }
-  ]
+      name: {
+        type: String,
+        required: true,
+      },
+    },
+  ],
 });
-
 
 module.exports = mongoose.model("Account", accountSchema);
