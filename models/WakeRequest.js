@@ -1,10 +1,10 @@
 const mongoose = require("mongoose");
 
 const wakeRequestSchema = new mongoose.Schema({
-  user: {
-    type: mongoose.Types.ObjectId,
-    ref: "User",
-  },
+  // user: {
+  //   type: mongoose.Types.ObjectId,
+  //   ref: "User",
+  // },
   computer: {
     type: mongoose.Types.ObjectId,
     ref: "Computer",
@@ -15,4 +15,4 @@ const wakeRequestSchema = new mongoose.Schema({
   },
 });
 
-module.exports = mongoose.Model("WakeRequest", wakeRequestSchema);
+module.exports = mongoose.model("WakeRequest", wakeRequestSchema);
