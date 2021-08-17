@@ -9,12 +9,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  computers: [
-    {
-      type: mongoose.Types.ObjectId,
-      ref: "Computer",
-    },
-  ],
+  account: {
+    type: mongoose.Types.ObjectId,
+    ref: "Account",
+  },
 });
 
 module.exports = mongoose.model("User", userSchema);
